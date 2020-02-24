@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="main.css" rel="stylesheet" type="text/css"/>
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="application-root"></div>
+        
+<!--type="text/jsx"-->
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"> </script> 
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"> </script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"> </script>
+    <script type="text/babel">
+    function App() {
+            return (
+              <div>
+                                    
+                <h1>Sally Student Resume</h1>
+
+                <section>
+                    <header>
+                    <h2>Education</h2>
+                    </header>
+                    <h3>Stanford University</h3>
+                    <p>2004-2008</p>
+                    <p>Masters in Computer Science</p>
+                    <h3>San Jose State University</h3>
+                    <p>2009-2013</p>
+                    <p>Masters Typography</p>
+                </section>
+                    
+                <section>
+                    <header>
+                    <h2>Experience</h2>
+                    </header>
+                    <h3>Apple Store</h3>
+                    <p>2012-2019</p>
+                    <p> Apple Store Genius </p>
+                    <ul>
+                        <li>Repair Devices</li>
+                        <li>Troubleshoot issues</li>
+                        <li>Repair Relationships</li>
+                    </ul>
+                </section>
+                    
+                <section>
+                    <header>
+                    <h3>QA Engineer</h3>
+                    </header>
+                    <p>2013-2018</p>
+                    <p>Write automated test for manual test cases for iOS and MacOS features</p> 
+                    <ul>
+                        <li>Software Testing</li>
+                        <li>Work directly with engineering teams on newly implemented features</li>
+                        <li>Document and share results of findings</li>
+                    </ul>
+                </section>
+                    
+                <section>
+                    <header>
+                    <h2>Contact Sally:</h2>
+                    </header>
+                    <address>by email:<a href="mailto:sally.student@coolsally.com">sally.student@coolsally.com</a>
+                    <br/>
+                    by phone: 777.777.7777
+                    <br/>
+                    by mail: 1111 Infinte Circle, Cupertino, CA 11111
+                    </address>
+                    <img src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="An image of Sally." width="300" />
+                </section>
+              </div>
+            );
+          };
+    
+    
+    ReactDOM.render(
+        <App 
+            nameProp={name} 
+            
+        />, 
+    document.querySelector('#application-root')
+    );
+    
+    
+    </script>
+    
+</body>
+</html>
